@@ -1,0 +1,23 @@
+For each two things in the INBOX, how many times dose the second fully fit into the first? Don't worry about negative numbers, divide by zero, or remainders.
+Challenge: 15 / 76
+
+15 / 71
+
+a   jump
+b
+    copyfrom 8
+    outbox
+a
+    inbox
+    copyto 6
+    inbox
+    copyto 7
+    copyfrom 9
+    copyto 8
+c
+    copyfrom 6
+    sub 7
+b   jump if negative
+    copyto 6
+    bump+ 8
+c   jump
