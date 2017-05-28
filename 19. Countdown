@@ -1,0 +1,19 @@
+For each number in the INBOX, send that number to the OUTBOX, followed by all numbers down to (or up to) zero.
+Challenge: 10 / 82
+
+10 / 114 
+
+a   
+    inbox
+    copyto 0
+c
+d
+    outbox
+    copyfrom 0
+a   jump if zero
+b   jump if negative
+    bump- 0
+c   jump
+b
+    bump+ 0
+d   jump
