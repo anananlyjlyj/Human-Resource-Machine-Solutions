@@ -1,0 +1,26 @@
+For each two things in the INBOX, multiply them, and OUTBOX the result, Don't worry about negative numbers for now.
+Challenge: 15 / 109
+
+15 / 122
+
+e
+    inbox
+    copyto 0
+    copyto 6
+    inbox
+a   jump if zero
+    copyto 1
+d   
+    bump- 1
+b   jump if zero
+    copyfrom 6
+c   jump if zero
+    add 0
+    copyto 6
+d   jump
+b
+    copyfrom 6
+a
+c
+    outbox
+e   jump
