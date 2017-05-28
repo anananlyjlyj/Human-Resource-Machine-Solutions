@@ -1,0 +1,31 @@
+Send each thing from the INBOX to the OUTBOX. BUT, if a number is negative, first remove its negative sign.
+
+raw:
+8 / 40
+
+c
+    inbox
+a   jump if negativ
+b   jump
+a
+    copyto 0
+    sub 0
+    sub 0
+b
+    outbox
+c   jump
+
+modified:
+8 / 34
+
+a   jump
+b
+    copyto 0
+    sub 0
+    sub 0
+c
+    outbox
+a
+    inbox
+b   jump if negativ
+c   jump
