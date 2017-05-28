@@ -1,0 +1,19 @@
+For each zero terminated string in the INBOX, reverse it and put the result in the OUTBOX. Repeat!
+Challenge: 11 / 122
+
+10 / 109    
+
+b
+    inbox
+a   jump if zero
+    copy to [14]
+c
+    bump+ 14
+b   jump
+a
+d
+    bump- 14
+c   jump
+    copyfrom [14]
+    outbox
+d   jump
