@@ -1,0 +1,28 @@
+Each number in the INBOX is an address of a tile on the floor. Send to the OUTBOX the coordinates of that tile, column first, row second.
+Challenge: 14 / 76
+
+    0  1  2  3
+0 | 0  1  2  3
+1 | 4  5  6  7
+2 | 8  9  10 11
+3 | 12 13 (0)(4)
+
+14 / 85
+
+a   jump
+b
+    add 15
+    outbox
+    bump- 10
+    outbox
+a
+    copyfrom 14
+    copyto 10
+    inbox
+c
+    sub 15
+    copyto 13
+    bump+ 10
+    copyfrom 13
+b   jump if negative
+c   jump
