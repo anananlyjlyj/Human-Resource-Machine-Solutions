@@ -1,5 +1,5 @@
 # Human-Resource-Machine-Solutions
 My solutions, still improving 
 
-Total command lines
-Total running steps
+1. Total command lines
+2. Total running steps
