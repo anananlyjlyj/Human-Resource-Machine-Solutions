@@ -1,0 +1,22 @@
+Send everything from the INBOX to the OUTBOX, except for vowels.
+Challenge: 13 / 323
+
+13 / 318
+
+a   jump
+b
+    copyfrom 7
+    outbox
+a
+c
+    copyfrom 5
+    copyto 6
+    inbox
+    copyto 7
+d   
+    copyfrom [6]
+a   jump if zero
+    sub 7
+b   jump if zero
+    bump+ 6
+d   jump
