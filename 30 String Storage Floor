@@ -1,0 +1,15 @@
+Each thing in the INBOX is an address of a tile on the floor.
+For each addresss providied in the INBOX, OUTBOX the requested item from the floor and ALL FOLLOWING items on the floor until you reach a zero. Repeat!
+Challenge: 7 / 203
+
+7 / 203
+
+a
+    inbox
+    copyto 24
+b
+    copyfrom [24]
+a   jump if zero
+    outbox
+    bump+ 24
+b   jump
