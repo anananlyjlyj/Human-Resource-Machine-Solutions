@@ -1,0 +1,19 @@
+Each pair on the floor contains:
+    1. data
+    2. the address of another one of the pairs
+Each thing in the INBOX is an address of one of the pairs. OUTBOX the data from the pair, and also the data in all following pairs in the chain.
+The chain ends when you reach a negative address. Repeat until the INBOX is empty.
+Challenge: 8 / 63
+
+8 / 63
+
+a   
+    inbox
+b
+    copyto 5
+    copyfrom [5]
+    outbox
+    bump+ 5
+    copyfrom [5]
+a   jump if negative
+b   jump
